@@ -1,0 +1,134 @@
+{
+  "hero-landscape": {
+    "source": "ios/App/Assets.xcassets/start_landscape.imageset/start_landscape.png",
+    "original_display_dimensions": [
+      1672,
+      941
+    ],
+    "widths": [
+      960,
+      1672
+    ]
+  },
+  "hero-portrait": {
+    "source": "ios/App/Assets.xcassets/start_portrait.imageset/start_portrait.png",
+    "original_display_dimensions": [
+      941,
+      1672
+    ],
+    "widths": [
+      640,
+      941
+    ]
+  },
+  "library": {
+    "source": "ios/App/Assets.xcassets/library_landscape.imageset/library_landscape.png",
+    "original_display_dimensions": [
+      1672,
+      941
+    ],
+    "widths": [
+      960,
+      1672
+    ]
+  },
+  "app-icon": {
+    "source": "ios/App/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+    "original_display_dimensions": [
+      1024,
+      1024
+    ],
+    "widths": [
+      96,
+      192
+    ]
+  },
+  "cockpit": {
+    "source": "ios/screenshots/iphone-18-pro/build6-width/landscape.png",
+    "original_display_dimensions": [
+      2622,
+      1206
+    ],
+    "widths": [
+      640,
+      1200
+    ]
+  },
+  "map": {
+    "source": "ios/screenshots/iphone-18-pro/build7/portrait.png",
+    "original_display_dimensions": [
+      1206,
+      2622
+    ],
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "calibration": {
+    "source": "ios/screenshots/ipad-pro-13-m5/editor/editor-3.png",
+    "original_display_dimensions": [
+      2752,
+      2064
+    ],
+    "widths": [
+      640,
+      1200
+    ]
+  },
+  "beacons": {
+    "source": "ios/screenshots/ipad-pro-13-m5/editor/new-mission-multiple-beacons.png",
+    "original_display_dimensions": [
+      2752,
+      2064
+    ],
+    "widths": [
+      640,
+      1200
+    ]
+  },
+  "associations": {
+    "source": "ios/screenshots/ipad-pro-13-m5/editor/editor-6.png",
+    "original_display_dimensions": [
+      2752,
+      2064
+    ],
+    "widths": [
+      640,
+      1200
+    ]
+  },
+  "instruments": {
+    "source": "ios/screenshots/iphone-18-pro/flight/left-selector.png",
+    "original_display_dimensions": [
+      2622,
+      1206
+    ],
+    "widths": [
+      640,
+      1200
+    ]
+  },
+  "aircraft": {
+    "source": "ios/screenshots/ipad-pro-13-m5/editor/new-mission-aircraft-replaced.png",
+    "original_display_dimensions": [
+      2752,
+      2064
+    ],
+    "widths": [
+      640,
+      1200
+    ]
+  },
+  "import": {
+    "source": "ios/screenshots/ipad-pro-13-m5/editor/editor-1.png",
+    "original_display_dimensions": [
+      2752,
+      2064
+    ],
+    "widths": [
+      640,
+      1200
+    ]
+  }
+}
