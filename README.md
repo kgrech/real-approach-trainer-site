@@ -4,13 +4,39 @@ Permanent product website, privacy policy and support information for Real Appro
 
 ## Public pages
 
-- Product landing page: https://kgrech.github.io/real-approach-trainer-site/
-- Privacy policy: https://kgrech.github.io/real-approach-trainer-site/privacy/
-- Support and bug reports: https://kgrech.github.io/real-approach-trainer-site/support/
+- Product landing page: https://approachtrainer.com/
+- Privacy policy: https://approachtrainer.com/privacy/
+- Support and bug reports: https://approachtrainer.com/support/
 
 GitHub Pages publishes the repository root from `main`. Edit the HTML and shared `styles.css`, commit and push to update the site. Keep application source, internal documentation and credentials out of this repository.
 
 For local preview, run `python3 -m http.server 8000` in this directory.
+
+## Domain and publishing
+
+`approachtrainer.com` is the dedicated Real Approach Trainer product domain; the application name and Grekon Studio publisher identity are unchanged. Porkbun handles registration, renewal and authoritative DNS. GitHub Pages serves the site with the apex hostname as its custom domain and HTTPS enforced. The root `CNAME` file preserves that hostname when publishing from `main`.
+
+DNS configuration, with a 600-second TTL:
+
+| Name | Type | Value |
+| --- | --- | --- |
+| `@` | A | `185.199.108.153` |
+| `@` | A | `185.199.109.153` |
+| `@` | A | `185.199.110.153` |
+| `@` | A | `185.199.111.153` |
+| `@` | AAAA | `2606:50c0:8000::153` |
+| `@` | AAAA | `2606:50c0:8001::153` |
+| `@` | AAAA | `2606:50c0:8002::153` |
+| `@` | AAAA | `2606:50c0:8003::153` |
+| `www` | CNAME | `kgrech.github.io` |
+
+Keep Porkbun's authoritative nameservers. Replace conflicting parking records, preserve unrelated email/verification records, and do not add wildcard DNS records. GitHub Pages redirects `www.approachtrainer.com` and the former `https://kgrech.github.io/real-approach-trainer-site/` URLs to the canonical domain. Each HTML page declares its own canonical URL; `robots.txt` advertises the three-page sitemap.
+
+Use the authenticated Porkbun MCP connection for domain administration and authenticated GitHub Pages tooling for repository settings. Domain-specific API Access must be enabled in Porkbun. Credentials belong in the agent host's protected configuration, never this repository. The domain was registered on 5 November 2026 with an initial expiry of 5 November 2027. Porkbun quoted $11.81/year for registration and renewal on that date ($59.05 for five years at unchanged rates, excluding applicable taxes); this is a planning figure, not a purchase receipt or guaranteed future price. Auto-renew was enabled when inspected; any paid renewal or billing change requires owner authorization.
+
+Future applications can have independent domains and repositories without changing this site's hostname. Adding an approved publisher subdomain instead requires a CNAME to the owning GitHub account's Pages hostname and a matching custom domain on that application's repository. One Pages site has one configured custom hostname.
+
+For a future domain migration, arrange permanent HTTP redirects from the old hostname to the new one, preserving page paths; DNS alone cannot redirect. Update canonical metadata, sitemap, robots.txt, public documentation and app-store website/privacy/support links, verify the new property in Search Console and submit its sitemap, and use Change of Address where supported. Retain the old domain and redirects during migration. Search Console and store-console changes require their respective access and authorized scope. Account-level GitHub Pages domain verification can additionally protect the hostname; keep its generated TXT challenge record if configured.
 
 ## Design and assets
 
