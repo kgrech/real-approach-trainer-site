@@ -14,7 +14,7 @@ For local preview, run `python3 -m http.server 8000` in this directory.
 
 ## Domain and publishing
 
-`approachtrainer.com` is the dedicated Real Approach Trainer product domain; the application name and Grekon Studio publisher identity are unchanged. Porkbun handles registration, renewal and authoritative DNS. GitHub Pages serves the site with the apex hostname as its custom domain and HTTPS enforced. The root `CNAME` file preserves that hostname when publishing from `main`.
+`approachtrainer.com` is the dedicated Real Approach Trainer product domain; the application name and Grekon Studio publisher identity are unchanged. Porkbun handles registration, renewal and authoritative DNS. GitHub Pages serves the site with the apex hostname as its custom domain. Enable Enforce HTTPS after GitHub issues the certificate for the apex and `www` hostnames; verify secure access and redirects before considering a domain setup complete. The root `CNAME` file preserves that hostname when publishing from `main`.
 
 DNS configuration, with a 600-second TTL:
 
